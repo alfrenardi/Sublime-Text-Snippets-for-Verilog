@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+case (${1}) 
+    ${2}:${3:;}
+    ${4}:${5:;}
+    default:${6:;}
+endcase
+]]></content>
+    <tabTrigger>case switch</tabTrigger>
+    <scope>source.verilog</scope>
+</snippet>

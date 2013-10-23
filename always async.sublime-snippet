@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+always @(${1}) begin
+    ${2}
+end
+]]></content>
+    <tabTrigger>always asynchronous</tabTrigger>
+    <scope>source.verilog</scope>
+</snippet>

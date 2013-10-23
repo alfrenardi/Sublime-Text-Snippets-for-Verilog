@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${1:integer ${2:i};}
+for (${2:i} = ${3:0}; ${2:i} ${2:i}<=${4}; ${2:i}=${2:i}+1) begin
+    ${5}
+end
+]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.verilog</scope>
+</snippet>

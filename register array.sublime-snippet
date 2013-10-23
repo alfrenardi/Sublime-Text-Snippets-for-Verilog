@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+reg [${3:0}:${2}] ${1};
+]]></content>
+    <tabTrigger>reg</tabTrigger>
+    <scope>source.verilog</scope>
+</snippet>

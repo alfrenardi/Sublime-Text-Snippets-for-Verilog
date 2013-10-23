@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+module ${1} (clk, ${2}, ${3})
+input clk, ${2};
+output ${3};
+${4}
+endmodule
+]]></content>
+    <tabTrigger>module synchronous</tabTrigger>
+    <scope>source.verilog</scope>
+</snippet>
