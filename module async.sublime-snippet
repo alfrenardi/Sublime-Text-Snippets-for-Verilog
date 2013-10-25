@@ -1,9 +1,9 @@
 <snippet>
     <content><![CDATA[
 module ${1} (${2}, ${3})
-input ${2};
-output ${3};
-${4}
+    input ${2};
+    output ${3};
+    ${4}
 endmodule
 ]]></content>
     <tabTrigger>module asynchronous</tabTrigger>

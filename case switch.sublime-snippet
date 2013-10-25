@@ -1,9 +1,18 @@
 <snippet>
     <content><![CDATA[
 case (${1}) 
-    ${2}:${3:;}
-    ${4}:${5:;}
-    default:${6:;}
+    ${2}:
+        begin
+            ${3:;}
+        end
+    ${4}:
+        begin
+            ${5:;}
+        end
+    default:
+        begin
+            ${6:;}
+        end
 endcase
 ]]></content>
     <tabTrigger>case switch</tabTrigger>

@@ -1,10 +1,10 @@
 <snippet>
     <content><![CDATA[
-always @ (${1})
+if (${1}) 
     begin
         ${2}
     end
 ]]></content>
-    <tabTrigger>always asynchronous</tabTrigger>
+    <tabTrigger>if</tabTrigger>
     <scope>source.verilog</scope>
 </snippet>

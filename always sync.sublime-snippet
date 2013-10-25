@@ -1,8 +1,10 @@
+
 <snippet>
     <content><![CDATA[
-always @(posedge clk) begin
-    ${1}
-end
+always @ (posedge clk)
+    begin
+        ${1}
+    end
 ]]></content>
     <tabTrigger>always clock-synchronous</tabTrigger>
     <scope>source.verilog</scope>
