@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-parameter ${1};
+parameter ${1} = ${2};
 ]]></content>
     <tabTrigger>parameter</tabTrigger>
     <scope>source.verilog</scope>

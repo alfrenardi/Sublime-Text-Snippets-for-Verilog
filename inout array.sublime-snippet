@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-inout [${3:0}:${2}] ${1};
+inout [0:${2}] ${1};
 ]]></content>
     <tabTrigger>wire</tabTrigger>
     <scope>source.verilog</scope>

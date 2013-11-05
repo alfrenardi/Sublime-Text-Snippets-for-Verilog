@@ -1,0 +1,64 @@
+<snippet>
+    <content><![CDATA[
+reg ${6:out};
+reg [0:${1}] state, next_state;
+
+integer ${2:S0}=0;
+integer ${3:S1}=1;
+integer ${4:S2}=2;
+integer ${5:S3}=3;
+
+//Outputs
+always @ (state) 
+     begin
+          case (state)
+               ${2:S0}:
+                    ${6:out}; = ${7};
+               ${3:S1}
+                    ${6:out}; = ${8};
+               ${4:S2}:
+                    ${6:out}; = ${9};
+               ${5:S3}:
+                    ${6:out}; = ${10};
+               default:
+                    ${6:out}; = ${11};
+          endcase
+     end
+
+//States
+always @ (${17:input})
+     begin
+        case (state):
+            ${2:S0}:
+                begin
+                    next_state <= ${12};
+                end
+            ${3:S1}
+                begin
+                    next_state <= ${13};
+                end
+            ${4:S2}:
+                begin
+                    next_state <= ${14};
+                end
+            ${5:S3}:
+                begin
+                    next_state <= ${15};
+                end
+            default:
+                begin
+                    next_state <= ${16};
+                end
+        endcase
+     end
+
+//Update state
+always @ (posedge clk)
+    state <= next_state;
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>FSM Moore</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.verilog</scope>
+</snippet>
